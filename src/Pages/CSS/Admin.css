@@ -1,0 +1,36 @@
+.admin {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e3e6ec 100%);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    color: #2c2c2c;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Optional card-like wrapper for content */
+  .admin-content {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 1024px) {
+    .admin {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .admin-content {
+      padding: 20px;
+      border-radius: 12px;
+    }
+  }
+  

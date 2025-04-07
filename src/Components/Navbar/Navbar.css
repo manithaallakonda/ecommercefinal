@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s ease;
+}
+
+.nav-logo {
+    width: 180px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.nav-profile:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Add nav-items like menu, logout, etc. */
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-logo {
+        width: 140px;
+    }
+
+    .nav-profile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+}

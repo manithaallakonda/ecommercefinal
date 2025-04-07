@@ -1,0 +1,94 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Font & Theme */
+:root {
+  --primary-color: #7f5af0;
+  --secondary-color: #ff5470;
+  --bg-color: #f5f7fa;
+  --text-color: #1e1e2f;
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  color: var(--text-color);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Container Utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Buttons */
+.button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.button:hover {
+  background: var(--secondary-color);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Form Styling (General) */
+input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: var(--transition);
+  width: 100%;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(127, 90, 240, 0.2);
+}

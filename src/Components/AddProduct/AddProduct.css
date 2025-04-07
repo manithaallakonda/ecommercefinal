@@ -1,0 +1,112 @@
+/* Background for the full page (optional) */
+body {
+  background: linear-gradient(135deg, #ffe8ec, #e0f7fa);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main container */
+.addproduct {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+/* Responsive grid layout */
+.addproduct-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Form fields */
+.addproduct-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.addproduct-label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.addproduct-input,
+.addproduct-select {
+  height: 50px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background-color: #fafafa;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease-in-out;
+}
+
+.addproduct-input:focus,
+.addproduct-select:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 5px rgba(142, 68, 173, 0.3);
+  outline: none;
+}
+
+/* Upload section */
+.addproduct-thumbnail {
+  border: 2px dashed #8e44ad;
+  padding: 30px;
+  border-radius: 16px;
+  background: #f9f3ff;
+  text-align: center;
+}
+
+.addproduct-thumbnail img {
+  width: 130px;
+  height: 130px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 2px solid #a29bfe;
+}
+
+/* Upload button */
+.addproduct-upload-btn {
+  padding: 12px 20px;
+  border: none;
+  background: #8e44ad;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.addproduct-upload-btn:hover {
+  background: #732d91;
+}
+
+/* Submit button */
+.addproduct-btn {
+  width: 200px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6a88, #ff99ac);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.addproduct-btn:hover {
+  background: linear-gradient(90deg, #ff4b6e, #ff7894);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 107, 129, 0.5);
+}
