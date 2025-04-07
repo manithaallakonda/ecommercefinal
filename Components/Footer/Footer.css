@@ -1,0 +1,118 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px 30px;
+    background: linear-gradient(to right, #f0f4ff, #e0ecff);
+    color: #333;
+    border-top: 4px solid #6c63ff;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-logo p {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e1e2f;
+    letter-spacing: 1px;
+  }
+  
+  .footer-logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #6c63ff;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(108, 99, 255, 0.2);
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a4a5e;
+  }
+  
+  .footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links li:hover {
+    color: #6c63ff;
+    text-decoration: underline;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icons-container {
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(108, 99, 255, 0.1);
+  }
+  
+  .footer-icons-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+  }
+  
+  .footer-icons-container img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    color: #5c5c6c;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .footer-copyright hr {
+    width: 90%;
+    height: 2px;
+    border: none;
+    border-radius: 4px;
+    background: #d6d6ff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-links {
+      gap: 20px;
+      font-size: 14px;
+    }
+  
+    .footer-logo p {
+      font-size: 26px;
+    }
+  
+    .footer-icons-container {
+      padding: 10px;
+    }
+  
+    .footer {
+      padding: 40px 15px 20px;
+    }
+  }
+  
